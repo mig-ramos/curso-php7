@@ -12,7 +12,7 @@
   //echo $root;
 
   // Carrega uma lista de ususarios
-  //  $lista = Usuario::getList();
+   // $lista = Usuario::getList();
   //  echo json_encode($lista);
 
   // Carrega uma lista de usuários buscando pelo login
@@ -20,7 +20,17 @@
   //echo json_encode($search);
 
   //Carrega um usuario usando o login e a senha
-  $usuario = new Usuario();
-  $usuario->login("Jose","1234567890");
-  echo $usuario;
+  //$usuario = new Usuario();
+  //$usuario->login("Jose","1234567890");
+ // echo $usuario;
+
+ // Inseri um aluno
+ //$aluno = new Usuario();
+ $aluno = new Usuario("aluno","12345");
+ //$aluno->setDeslogin("aluno");
+ //$aluno->setDessenha("12345");
+ //aluno->insert();
+ $aluno->insert();
+
+ echo $aluno;
 ?>
