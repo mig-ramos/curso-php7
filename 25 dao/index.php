@@ -11,8 +11,8 @@
   //$root->loadById(3);
   //echo $root;
 
-  // Carrega uma lista de ususarios
-   // $lista = Usuario::getList();
+  //Carrega uma lista de ususarios
+  //  $lista = Usuario::getList();
   //  echo json_encode($lista);
 
   // Carrega uma lista de usuários buscando pelo login
@@ -26,11 +26,18 @@
 
  // Inseri um aluno
  //$aluno = new Usuario();
- $aluno = new Usuario("aluno","12345");
+ ///$aluno = new Usuario("aluno","12345");
  //$aluno->setDeslogin("aluno");
  //$aluno->setDessenha("12345");
  //aluno->insert();
- $aluno->insert();
+ ///$aluno->insert();
 
- echo $aluno;
+ ///echo $aluno;
+
+ // Alterar registro
+ $usuario =  new Usuario();
+ $usuario->loadById(6);
+ $usuario->update("professor","54321");
+ echo $usuario;
+
 ?>
