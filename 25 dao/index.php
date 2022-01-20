@@ -34,10 +34,17 @@
 
  ///echo $aluno;
 
+ /*
  // Alterar registro
  $usuario =  new Usuario();
  $usuario->loadById(6);
  $usuario->update("professor","54321");
  echo $usuario;
+*/
 
+// Deletar registro
+$usuario =  new Usuario();
+$usuario->loadById(7);
+$usuario->delete();
+echo $usuario;
 ?>
