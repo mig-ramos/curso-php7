@@ -1,0 +1,20 @@
+{
+    "name": "siderbit/composer",
+    "description": "Aula de PHP 7",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Siderbit\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Miguel Arcanjo",
+            "email": "mig.ramos10@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}
